@@ -9,7 +9,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(url, "*sede.corp.sanpaoloimi.com*")
     )
     {
-        return "PROXY 10.41.2.10:1199";
+        return "PROXY 10.41.2.11:1199";
     }
     
 // If IP address is Intesa, send to VPN proxy TEST
@@ -25,7 +25,7 @@ function FindProxyForURL(url, host) {
         shExpMatch(url, "*10\.31\.*")
        )
     {
-        return "PROXY 10.41.2.11:1199";
+        return "PROXY 10.41.2.10:1199";
     }
     
 // If URL has no dots in host name, send traffic direct.
