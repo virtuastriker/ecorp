@@ -1,12 +1,13 @@
 //*************************************
 // VPN Proxy Settings               
-// 15/05/2018                   
+// 19/05/2020                  
 //*************************************
 
 function FindProxyForURL(url, host) {
 // If IP address is Intesa PROD, send to VPN proxy PROD
     if (
-        shExpMatch(url, "*sede.corp.sanpaoloimi.com*")
+		shExpMatch(url, "*sede.corp.sanpaoloimi.com*") ||
+		shExpMatch(url, "*websso.filiali.corp.sanpaoloimi.com*elkprod.sede.corp.sanpaoloimi.com*")
     )
     {
         return "PROXY 10.41.2.11:1199";
